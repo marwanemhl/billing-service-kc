@@ -9,13 +9,12 @@ import net.minidev.json.parser.ParseException;
 
 import org.sid.billingservice.entities.Bill;
 import org.sid.billingservice.entities.ProductItem;
-import org.sid.billingservice.feign.CustomerRestClient;
-import org.sid.billingservice.feign.ProductItemRestClient;
+import org.sid.billingservice.KeycloakRestTemplate.CustomerRestClient;
+import org.sid.billingservice.KeycloakRestTemplate.ProductItemRestClient;
 import org.sid.billingservice.model.Customer;
 import org.sid.billingservice.model.Product;
 import org.sid.billingservice.repository.BillRepository;
 import org.sid.billingservice.repository.ProductItemRepository;
-import org.springframework.hateoas.PagedModel;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
